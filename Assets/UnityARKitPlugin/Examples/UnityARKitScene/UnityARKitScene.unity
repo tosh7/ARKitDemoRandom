@@ -464,8 +464,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   dragons:
-  - {fileID: 1488048141214702, guid: 8df418f4d958c482fa7ca39b9ce35904, type: 2}
-  - {fileID: 1986170573035674, guid: d4d40568c9939407c9ab88a13ada3cf2, type: 2}
+  - {fileID: 170474, guid: 770a7a5a93eb9f24cbb20fc429fe10af, type: 2}
+  num: 0
 --- !u!23 &732268494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -742,6 +742,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   dragons: []
+  num: 0
 --- !u!1 &1121666029
 GameObject:
   m_ObjectHideFlags: 0

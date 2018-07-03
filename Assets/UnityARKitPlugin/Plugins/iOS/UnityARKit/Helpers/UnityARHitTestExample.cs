@@ -8,6 +8,7 @@ namespace UnityEngine.XR.iOS {
 		public LayerMask collisionLayer = 1 << 10; //ARKitPlane layer
 		public GameObject[] dragons; //配列の入れ物
 		private int number; //乱数格納器
+		public int num = 0;
 
 		// bool HitTestWithResultType (ARPoint point, ARHitTestResultType resultTypes) {
 		// 	List<ARHitTestResult> hitResults = UnityARSessionNativeInterface.GetARSessionNativeInterface ().HitTest (point, resultTypes);
@@ -64,7 +65,10 @@ namespace UnityEngine.XR.iOS {
 						foreach(var hitResult in hitresults){
 							Vector3 position = UnityARMatrixOps.GetPosition(hitResult.worldTransform);
 
-							CreateObj(new Vector3(position.x, position.y, position.z));
+							if(num == 0) {
+								CreateObj(new Vector3(position.x, position.y, position.z));
+								num++;
+							}
 							break;
 						}
 					}
